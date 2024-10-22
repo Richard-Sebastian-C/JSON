@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1> Converting JS Text Into JSON String</h1>
+<p id = "result"></p>
+<p id = "age"></p>
+<p id = "grade"></p>
+<script>
+    var myObject = {name: "Nisha", age:12, grade:7};
+    var myJSON = JSON.stringify(myObject);
+    var newObject = JSON.parse(myJSON);
+    document.getElementById("result").innerHTML = newObject.name;
+    document.getElementById("age").innerHTML = newObject.age;
+    document.getElementById("grade").innerHTML = newObject.grade;
+    
+</script>
+</body>
+</html>
